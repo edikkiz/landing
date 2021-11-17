@@ -1,0 +1,125 @@
+@import "./variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1140px;
+}
+
+.row {
+  width: 1140px;
+}
+
+header {
+  height: 144px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 107px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  font-family: OpenSans;
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.13px;
+  text-align: center;
+  color: var(--black);
+}
+
+.navbar-elem {
+  width: 144px;
+  height: 23px;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+}
+
+.language-elem {
+  width: 56px;
+  height: 24px;
+  opacity: 0.25;
+  font-family: OpenSans;
+  font-size: 17px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.13px;
+  text-align: start;
+  color: var(--black);
+  opacity: 0.25;
+  margin-left: -100px;
+}
+
+.active {
+  opacity: 1;
+  margin-left: 0px;
+}
+
+.title {
+  margin: 0 0 49px;
+  text-align: start;
+  height: 110px;
+  font-family: Catamaran;
+  font-size: 55px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.38px;
+  color: var(--black);
+}
+
+.text {
+  margin: 0 0 62px;
+  opacity: 0.75;
+  font-family: OpenSans;
+  font-size: 21px;
+  letter-spacing: -0.53px;
+  color: var(--charcoal);
+}
+
+.button {
+  width: 315px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 72px;
+  // -webkit-filter: blur(5px);
+  // filter: blur(5px);
+  background-color: rgba(8, 61, 119, 0.5);
+}
+
+// .button-text {
+//   width: 261px;
+//   height: 34px;
+//   font-family: Catamaran;
+//   font-size: 21px;
+//   font-weight: 900;
+//   letter-spacing: -0.53px;
+//   text-align: center;
+//   color: #fff;
+// }
+
+.test {
+  width: 315px;
+  height: 72px;
+  object-fit: contain;
+  border-radius: 72px;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-color: rgba(8, 61, 119, 0.5);
+}
