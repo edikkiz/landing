@@ -31,9 +31,11 @@
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
-        <button class="button">
-          <div class="button-text">a free consultation</div>
-        </button>
+        <div class="button-shadow">
+          <button class="button">
+            <div class="button-text">Request a free consultation</div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
