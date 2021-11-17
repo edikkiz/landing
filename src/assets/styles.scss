@@ -10,11 +10,11 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: $maxWidthContainer;
 }
 
 .row {
-  width: 1140px;
+  width: $maxWidthContainer;
 }
 
 header {
@@ -98,28 +98,18 @@ header {
   height: 72px;
   object-fit: contain;
   border-radius: 72px;
-  // -webkit-filter: blur(5px);
-  // filter: blur(5px);
-  background-color: rgba(8, 61, 119, 0.5);
-}
-
-// .button-text {
-//   width: 261px;
-//   height: 34px;
-//   font-family: Catamaran;
-//   font-size: 21px;
-//   font-weight: 900;
-//   letter-spacing: -0.53px;
-//   text-align: center;
-//   color: #fff;
-// }
-
-.test {
-  width: 315px;
-  height: 72px;
-  object-fit: contain;
-  border-radius: 72px;
   -webkit-filter: blur(5px);
   filter: blur(5px);
   background-color: rgba(8, 61, 119, 0.5);
+}
+
+.button-text {
+  width: 261px;
+  height: 34px;
+  font-family: Catamaran;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: -0.53px;
+  text-align: center;
+  color: #fff;
 }

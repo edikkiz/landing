@@ -31,9 +31,8 @@
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4">
-        <button class="test">
-          <img src="../assets/img/cta-button-desk-on-hover.png" alt="" />
-          <!-- <div class="button-text">a free consultation</div> -->
+        <button class="button">
+          <div class="button-text">a free consultation</div>
         </button>
       </div>
     </div>
