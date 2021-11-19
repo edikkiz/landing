@@ -25,45 +25,40 @@ header {
   display: flex;
   align-items: center;
   margin: 0 0 168px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  font-family: $OpenSans;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.13px;
-  color: $black;
-  text-align: center;
-}
-
-.navbar-elem {
-  width: 144px;
-  height: 23px;
-}
-
-.language {
-  display: flex;
-  justify-content: start;
-}
-
-.language-elem {
-  width: 56px;
-  height: 24px;
-  opacity: 0.25;
-  font-family: $OpenSans;
-  font-weight: 600;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.13px;
-  color: $black;
-  opacity: 0.25;
-  text-align: center;
-}
-
-.active {
-  opacity: 1;
+  .navbar {
+    display: flex;
+    justify-content: center;
+    font-family: $OpenSans;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.13px;
+    color: $black;
+    text-align: center;
+    .navbar-elem {
+      width: 144px;
+      height: 23px;
+    }
+  }
+  .language {
+    display: flex;
+    justify-content: start;
+    .language-elem {
+      width: 56px;
+      height: 24px;
+      opacity: 0.25;
+      font-family: $OpenSans;
+      font-weight: 600;
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.13px;
+      color: $black;
+      opacity: 0.25;
+      text-align: center;
+    }
+    .active {
+      opacity: 1;
+    }
+  }
 }
 
 .LOGISTICS-MANAGEMENT {
@@ -78,7 +73,7 @@ header {
   color: $black;
 }
 
-.first-text {
+.LOGISTICS-MANAGEMENT-text {
   width: 566px;
   padding: 0;
   margin: 0 0 62px 12px;
@@ -112,62 +107,59 @@ header {
   -o-object-fit: contain;
   object-fit: contain;
   border-radius: 72px;
-}
-
-.button-desk {
-  border: none;
-  margin-left: -15px;
-  background-color: $twilight-blue;
-  border-radius: 72px;
-  width: $textWidth;
-  height: 77px;
-  object-fit: contain;
-}
-
-.button-desk-text {
-  font-family: $Catamaran;
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: -0.53px;
-  text-align: center;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
-  color: $white;
+  .button-desk {
+    border: none;
+    margin-left: -15px;
+    background-color: $twilight-blue;
+    border-radius: 72px;
+    width: $textWidth;
+    height: 77px;
+    object-fit: contain;
+  }
+  .button-desk-text {
+    font-family: $Catamaran;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -0.53px;
+    text-align: center;
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+    color: $white;
+  }
 }
 
 .cards {
   width: 1440px;
   display: flex;
-}
-
-.card-info {
-  width: 420px;
-  height: 368px;
-  margin-right: 15px;
-  padding: 0 37px 0 38px;
-  object-fit: contain;
-  box-shadow: 0 10px 30px 0 rgba(8, 61, 119, 0.25);
-  background-color: $twilight-blue;
-  .card-info-title {
-    font-family: $OpenSans;
-    height: 50px;
-    margin: 67px 0px 22px 0px;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 25px;
-    letter-spacing: -0.53px;
-    color: $white;
-  }
-  .card-info-text {
-    font-family: $OpenSans;
-    font-size: 17px;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.43px;
-    color: $white;
-    opacity: 0.8;
+  .card-info {
+    width: 420px;
+    height: 368px;
+    margin-right: 15px;
+    padding: 0 37px 0 38px;
+    object-fit: contain;
+    box-shadow: 0 10px 30px 0 rgba(8, 61, 119, 0.25);
+    background-color: $twilight-blue;
+    .card-info-title {
+      font-family: $OpenSans;
+      height: 50px;
+      margin: 67px 0px 22px 0px;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 25px;
+      letter-spacing: -0.53px;
+      color: $white;
+    }
+    .card-info-text {
+      font-family: $OpenSans;
+      font-size: 17px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.43px;
+      color: $white;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -186,7 +178,7 @@ header {
   }
 }
 
-.second-text {
+.text-with-procents {
   width: $textWidth;
   padding-left: 40px;
   margin: 5px 0 315px;
@@ -229,45 +221,41 @@ header {
   color: $black;
 }
 
-.notation-wrapper {
-  display: flex;
-}
-
-.notation-icone {
-  padding: 15px 23px 0 0;
-}
-
-.notation-title {
-  font-family: $Catamaran;
-  font-size: 25px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.63px;
-  text-align: start;
-  color: $black;
-  margin-bottom: 20px;
-}
-
-.notation-text {
-  width: $textWidth + 1;
-  color: $black;
-  font-family: $OpenSans;
-  font-size: 17px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.43px;
-  margin-bottom: 47px;
-}
-
 .notation-block {
   padding-left: 80px;
-}
-.notation-block-right {
-  padding-left: 47px;
+  .notation-wrapper {
+    display: flex;
+    .notation-icone {
+      padding: 15px 23px 0 0;
+    }
+    .notation-text {
+      width: $textWidth + 1;
+      color: $black;
+      font-family: $OpenSans;
+      font-size: 17px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.43px;
+      margin-bottom: 47px;
+    }
+    .notation-title {
+      font-family: $Catamaran;
+      font-size: 25px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.63px;
+      text-align: start;
+      color: $black;
+      margin-bottom: 20px;
+    }
+  }
+  .right {
+    padding-left: 47px;
+  }
 }
 
 .YOUR-BUSINESS-CASE {
