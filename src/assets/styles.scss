@@ -24,6 +24,7 @@ header {
   height: 144px;
   display: flex;
   align-items: center;
+  margin: 0 0 168px;
 }
 
 .navbar {
@@ -63,10 +64,6 @@ header {
 
 .active {
   opacity: 1;
-}
-
-.row1 {
-  margin: 0 0 168px;
 }
 
 .LOGISTICS-MANAGEMENT {
@@ -122,7 +119,7 @@ header {
   margin-left: -15px;
   background-color: $twilight-blue;
   border-radius: 72px;
-  width: 345px;
+  width: $textWidth;
   height: 77px;
   object-fit: contain;
 }
@@ -130,7 +127,7 @@ header {
 .button-desk-text {
   font-family: $Catamaran;
   font-size: 21px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.53px;
   text-align: center;
   -webkit-filter: blur(0.3px);
@@ -190,7 +187,7 @@ header {
 }
 
 .second-text {
-  width: 345px;
+  width: $textWidth;
   padding-left: 40px;
   margin: 5px 0 315px;
   opacity: 0.75;
@@ -209,7 +206,7 @@ header {
   font-size: 115px;
   font-weight: 900;
   padding-left: 40px;
-  width: 346px;
+  width: $textWidth;
   height: 100px;
   line-height: 100px;
   vertical-align: middle;
@@ -254,7 +251,7 @@ header {
 }
 
 .notation-text {
-  width: 345px;
+  width: $textWidth + 1;
   color: $black;
   font-family: $OpenSans;
   font-size: 17px;
@@ -291,4 +288,132 @@ header {
     margin-bottom: 0;
     color: $watermelon;
   }
+}
+
+.our-advantages {
+  font-family: $Catamaran;
+  font-size: 35px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.88px;
+  color: $black;
+  margin-bottom: 52px;
+  height: 44px;
+  width: 505px;
+}
+
+.our-advantages-person-wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  width: 633px;
+  height: 757px;
+  padding: 96px 158px 133px 40px;
+  margin: 0 0 229px -20px;
+}
+
+.our-advantages-block {
+  margin-left: 10px;
+}
+
+.our-advantages-notations-wrapper {
+  margin-right: -20px;
+  .notation {
+    display: flex;
+    .icon {
+      margin-right: 43px;
+    }
+    .title-text {
+      .title {
+        font-family: $Catamaran;
+        font-size: 21px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.53px;
+        color: $black;
+      }
+      .text {
+        width: $textWidth;
+        opacity: 0.75;
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.38px;
+        color: $black;
+        margin-bottom: 26px;
+      }
+    }
+  }
+  .person-wrapper {
+    .text {
+      width: 435px;
+      font-family: $OpenSans;
+      font-size: 17px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.43px;
+      color: $black;
+      margin-bottom: 15px;
+    }
+    .icon-title {
+      width: 435px;
+      display: flex;
+      flex-direction: row-reverse;
+      .title {
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.43px;
+        text-align: right;
+        color: $black;
+      }
+      .icon {
+        margin: 0 0 71px 15px;
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
+
+footer {
+  .nav-wrapper {
+    display: flex;
+    .nav {
+      font-family: $OpenSans;
+      font-size: 15px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.12px;
+      text-align: center;
+      color: #fff;
+      height: 20px;
+      margin-left: 20px;
+    }
+    .imprint {
+      width: 80px;
+    }
+    .data-protection {
+      width: 175px;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 104px;
+  background-color: $black;
+  margin: 0;
 }
