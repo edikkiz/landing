@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div v-bind:class="{ modalContainer: isModalVisible }" class="container">
     <Header />
     <logisticsManagement />
     <HowYouExperienced />
@@ -12,9 +12,22 @@
       <div class="col-2"></div>
     </div>
     <HowCanYouBenefit />
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="button-desk-shadow">
+          <button class="button-desk">
+            <div @click="isModalVisible = true" class="button-desk-text">
+              Fill in the contact form
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
     <OurAdventages />
+    <Footer />
   </div>
-  <Footer />
+  <Modal v-if="isModalVisible" @close="isModalVisible = false" />
 </template>
 
 <script>
@@ -24,9 +37,10 @@ import HowYouExperienced from "./How-you-experienced.vue";
 import HowCanYouBenefit from "./How-can-you-benefit.vue";
 import OurAdventages from "./Our-adventages.vue";
 import Footer from "./Footer.vue";
+import Modal from "./Modal.vue";
 
 export default {
-  name: "HelloWorld",
+  name: "Landing",
   components: {
     Header,
     LogisticsManagement,
@@ -34,6 +48,12 @@ export default {
     HowCanYouBenefit,
     OurAdventages,
     Footer,
+    Modal,
+  },
+  data() {
+    return {
+      isModalVisible: false,
+    };
   },
 };
 </script>

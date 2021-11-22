@@ -74,20 +74,15 @@
       <p>LET’S DISCUSS</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-4"></div>
-    <div class="col-4">
-      <div class="button-desk-shadow">
-        <button class="button-desk">
-          <div class="button-desk-text">Fill in the contact form</div>
-        </button>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
 export default {
   name: "How-can-you-benefit",
+  methods: {
+    close() {
+      this.$emit("close");
+    },
+  },
 };
 </script>

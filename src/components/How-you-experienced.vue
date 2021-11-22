@@ -33,7 +33,7 @@
             with actual information about your available inventory online
           </div>
         </div>
-        <div class="card-info">
+        <div class="card-info last">
           <div class="card-info-title">Inefficient truck load</div>
           <div class="card-info-text">
             Without dynamic truck load scheduling, your company misses up to 50%

@@ -116,6 +116,11 @@ header {
     height: 77px;
     object-fit: contain;
   }
+  .button-desk:hover {
+    cursor: pointer;
+    background-color: #07325f;
+    transition: 0.5s;
+  }
   .button-desk-text {
     font-family: $Catamaran;
     font-size: 21px;
@@ -129,7 +134,7 @@ header {
 }
 
 .cards {
-  width: 1440px;
+  width: 1188px;
   display: flex;
   .card-info {
     width: 420px;
@@ -159,6 +164,16 @@ header {
       letter-spacing: -0.43px;
       color: $white;
       opacity: 0.8;
+    }
+  }
+  .last {
+    width: 318px;
+    margin-right: 0px;
+    overflow: hidden;
+    text-overflow: clip;
+    .card-info-text {
+      position: relative;
+      width: 345px;
     }
   }
 }
@@ -375,6 +390,13 @@ header {
 }
 
 footer {
+  margin-left: -150px;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 104px;
+  background-color: $black;
   .nav-wrapper {
     display: flex;
     .nav {
@@ -397,11 +419,174 @@ footer {
       width: 175px;
     }
   }
+}
+
+.modalContainer {
+  inset: 0;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.modal-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 104px;
-  background-color: $black;
-  margin: 0;
+  justify-content: center;
+}
+
+.modal {
+  -webkit-filter: none;
+  filter: none;
+  filter: none;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  flex-direction: column;
+  margin: auto;
+  width: 633px;
+  height: 753px;
+  .modal-close {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 8px;
+  }
+  .title {
+    text-align: start;
+    font-family: $Catamaran;
+    font-size: 25px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.63px;
+    color: $black;
+    margin: 0 0 20px 52px;
+  }
+  .text {
+    width: 529px;
+    opacity: 0.75;
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.38px;
+    color: $black;
+    margin: 0 0 50px 52px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+    font-family: $OpenSans;
+    .input-name {
+      margin: 0 12px;
+      display: flex;
+      flex-direction: column;
+      label {
+        height: 22px;
+      }
+      input {
+        width: 240px;
+        height: 44px;
+        object-fit: contain;
+        opacity: 0.25;
+        border-radius: 72px;
+        border: solid 1px $black;
+        padding: 10px 22px 10px 24px;
+      }
+    }
+    .full-wrapper {
+      display: flex;
+      flex-direction: column;
+      label {
+        height: 22px;
+      }
+      .full {
+        width: 504px;
+        height: 44px;
+        padding: 10px 48.9px 10px 24px;
+        object-fit: contain;
+        opacity: 0.25;
+        border-radius: 72px;
+        border: solid 1px $black;
+      }
+      .text-box {
+        font-family: $OpenSans;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.43px;
+        color: $black;
+        height: 132px;
+        border-radius: 22px;
+        resize: none;
+        overflow: auto;
+        overflow-x: hidden;
+      }
+      .text-box::-webkit-scrollbar-thumb {
+        background-color: #bbb;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 22px;
+        scroll-margin-block-start: 10px;
+      }
+      .text-box::-webkit-scrollbar {
+        border-radius: 22px;
+        scroll-margin-block-start: 10px;
+      }
+    }
+    label {
+      padding-left: 24px;
+    }
+  }
+  .privat-text {
+    margin-left: 64px;
+    width: 345px;
+    opacity: 0.75;
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.38px;
+    color: $black;
+    margin-bottom: 50px;
+  }
+  .button-modal-wrapper {
+    margin-left: 64px;
+    width: 504px;
+    display: flex;
+    justify-content: end;
+    .button-modal {
+      width: 240px;
+      height: 44px;
+      border: none;
+      margin-left: -15px;
+      background-color: $twilight-blue;
+      border-radius: 72px;
+      object-fit: contain;
+    }
+    .button-modal:hover {
+      cursor: pointer;
+      background-color: #07325f;
+      transition: 0.5s;
+    }
+    .button-modal-text {
+      font-family: $OpenSans;
+      font-size: 17px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.43px;
+      text-align: center;
+      color: #fff;
+    }
+  }
 }
