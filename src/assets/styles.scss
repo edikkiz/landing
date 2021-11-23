@@ -21,6 +21,11 @@ body {
 }
 
 header {
+  .burger-menu-icon {
+    img {
+      width: 0;
+    }
+  }
   height: 144px;
   display: flex;
   align-items: center;
@@ -76,7 +81,7 @@ header {
 .LOGISTICS-MANAGEMENT-text {
   width: 566px;
   padding: 0;
-  margin: 0 0 62px 12px;
+  margin: 0 0 62px -40px;
   opacity: 0.75;
   font-family: $OpenSans;
   font-size: 21px;
@@ -235,6 +240,18 @@ header {
   line-height: 1;
   letter-spacing: -0.88px;
   color: $black;
+  .HOW-CAN-YOU-BENEFIT-mobile {
+    font-size: 0;
+  }
+}
+
+.our-advantages-notations-wrapper {
+  .notation-mobile {
+    font-size: 0;
+    img {
+      width: 0;
+    }
+  }
 }
 
 .notation-block {
@@ -391,6 +408,11 @@ header {
 }
 
 footer {
+  .nav-wrapper-modile {
+    .data-protection-mobile {
+      font-size: 0;
+    }
+  }
   margin-left: -150px;
   width: 1440px;
   display: flex;
@@ -429,7 +451,7 @@ footer {
 }
 
 .modal-open {
-  overflow: hidden
+  overflow: hidden;
 }
 
 .modal-wrapper {
@@ -605,11 +627,13 @@ footer {
 }
 
 .scroll-for-more-info {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
   width: 207px;
   height: 36px;
   transform: rotate(-90deg);
-  // margin: 0 67px 45px 120px;
-  margin-left: -120px;
+  margin-left: -150px;
   opacity: 0.5;
   font-family: $OpenSans;
   font-size: 13px;
@@ -620,6 +644,11 @@ footer {
   letter-spacing: 0.16px;
   text-align: center;
   color: $charcoal;
+  img {
+    margin-left: -100px;
+    transform: rotate(90deg);
+  }
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -648,6 +677,7 @@ footer {
   }
 
   footer {
+    margin-left: -66px;
     width: 768px;
   }
 
@@ -667,18 +697,444 @@ footer {
     width: 452px;
     font-size: 17px;
     letter-spacing: -0.43px;
-    margin: 0 0 87px 0;
+    margin: 0 0 87px -82px;
+  }
+
+  .scroll-for-more-info {
+    margin-top: 20px;
+    margin-left: -120px;
   }
 
   .button-desk-shadow {
     margin-left: -107px;
+    margin-bottom: 144px;
 
     .button-desk-text {
       font-weight: 900;
     }
   }
 
-  // .cards {
-  //   width: 768px;
-  // }
+  .Have-you-experienced {
+    height: 25px;
+    margin-left: -35px;
+    width: 585px;
+    font-size: 25px;
+  }
+
+  .cards-wrapper {
+    margin-right: 65px;
+  }
+
+  .cards {
+    width: 768px;
+    //   .card-info {
+    //     overflow: hidden;
+    //     width: 375px;
+    //     .card-info-text {
+    //       font-size: 15px;
+    //     }
+    //   }
+    //   .last {
+    //     overflow: hidden;
+    //   }
+  }
+
+  .text-with-procents {
+    width: 258.6px;
+    height: 75.2px;
+    font-size: 18.8px;
+    margin-left: -115px;
+    margin-bottom: 165px;
+  }
+  .procents {
+    margin-left: 20px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    width: 259.4px;
+    height: 75.2px;
+    font-size: 80px;
+  }
+
+  .HOW-CAN-YOU-BENEFIT {
+    margin-left: -40px;
+    padding: 0;
+    font-size: 25px;
+    margin-bottom: 121px;
+  }
+  .notation-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notation-block {
+    padding-left: 0;
+    margin-left: -30px;
+    .notation-wrapper {
+      .notation-text {
+        font-weight: normal;
+      }
+      .notation-title {
+        font-size: 21px;
+        letter-spacing: -0.53px;
+      }
+    }
+  }
+
+  .YOUR-BUSINESS-CASE {
+    margin-top: 157px;
+    margin-left: -115px;
+  }
+
+  .our-advantages-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    margin-left: -20px;
+    .our-advantages {
+      font-size: 25px;
+    }
+  }
+  .our-advantages-person-wrapper {
+    width: 633px;
+    height: 708px;
+    padding: 90px 110px 90px 108px;
+    margin-left: -11px;
+  }
+  .modal .inputs {
+    .input-name input {
+      font-size: 17px;
+    }
+    .full-wrapper .full {
+      font-size: 17px;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  body {
+    margin-left: 0;
+    padding-left: 35px;
+  }
+
+  .container {
+    width: 375px;
+    padding: 0;
+    margin-left: -15px;
+  }
+
+  header {
+    .burger-menu-icon {
+      img {
+        margin-left: 40px;
+        width: 24px;
+      }
+    }
+  }
+
+  footer {
+    img {
+      margin-left: -100px;
+    }
+    .nav-wrapper {
+      .data-protection {
+        font-size: 0;
+      }
+      .imprint {
+        font-size: 0;
+      }
+    }
+    .nav-wrapper-modile {
+      .data-protection-mobile {
+        width: 200px;
+        height: 20px;
+        margin: -20px 0 36px;
+
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    width: 375px;
+    height: 208px;
+  }
+
+  .row {
+    width: 375px;
+  }
+
+  header {
+    margin: 0 0 92px;
+    .navbar {
+      opacity: 0;
+      margin-left: -66px;
+      .navbar-elem {
+        width: 0px;
+      }
+      .last {
+        margin-left: 25px;
+      }
+    }
+
+    .language {
+      display: flex;
+      justify-content: start;
+      .language-elem {
+        opacity: 0;
+      }
+    }
+  }
+
+  .LOGISTICS-MANAGEMENT {
+    padding: 0;
+    font-size: 30px;
+    width: 325px;
+    height: 120px;
+    letter-spacing: -0.75px;
+    margin-bottom: 50px;
+  }
+
+  .LOGISTICS-MANAGEMENT-text {
+    margin-bottom: 50px;
+    width: 325px;
+    height: 138px;
+  }
+
+  .scroll-for-more-info {
+    opacity: 0;
+  }
+
+  .button-desk-shadow {
+    box-shadow: 0px 5px 10px 0px rgba(8, 61, 119, 0.5);
+    height: 57px;
+    .button-desk {
+      height: 57px;
+    }
+  }
+
+  .Have-you-experienced {
+    width: 345px;
+    height: 50px;
+    letter-spacing: -0.63px;
+    margin-left: 20px;
+    padding: 0;
+  }
+  .text-with-procents {
+    margin-left: 0;
+    margin-bottom: 29.8px;
+    padding-left: 30px;
+    padding-right: 0;
+    letter-spacing: -0.47px;
+  }
+
+  .procents {
+    padding-left: 83px;
+    margin-bottom: 192.8px;
+  }
+
+  .HOW-CAN-YOU-BENEFIT {
+    font-size: 0;
+    .HOW-CAN-YOU-BENEFIT-mobile {
+      margin-left: 15px;
+      width: 345px;
+      height: 50px;
+      font-family: $Catamaran;
+      font-size: 25px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: -0.63px;
+      color: $black;
+    }
+  }
+  .notation-block {
+    margin-left: 0;
+    .notation-wrapper {
+      .notation-title {
+        width: 220px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .notation-text {
+        width: 220px;
+        font-size: 15px;
+        letter-spacing: -0.38px;
+        opacity: 0.75;
+        margin-bottom: 44px;
+      }
+    }
+  }
+  .YOUR-BUSINESS-CASE {
+    margin-top: 118px;
+    letter-spacing: -0.53px;
+    line-height: 1.19;
+    font-size: 21px;
+  }
+
+  .our-advantages-notations-wrapper {
+    .notation .icon img {
+      width: 0;
+    }
+    .notation .title-text {
+      .title {
+        font-size: 0;
+      }
+      .text {
+        font-size: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .notation-mobile {
+      width: 375px;
+      padding: 0;
+      .title-wrapper {
+        z-index: 2;
+        cursor: pointer;
+        padding-left: 15px;
+        width: 375px;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: solid 1px #f3f3f3;
+        .title {
+          width: 316px;
+          height: 34px;
+          font-family: $Catamaran;
+          font-size: 21px;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: -0.53px;
+          color: $black;
+        }
+        img {
+          width: 18px;
+          height: 10px;
+        }
+      }
+      .text {
+        padding-left: 15px;
+        width: 345px;
+        opacity: 0.75;
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.38px;
+        color: $black;
+      }
+    }
+  }
+
+  .our-advantages-person-wrapper {
+    padding: 25px;
+    margin-top: 98px;
+    margin-left: 15px;
+    width: 345px;
+    height: 625px;
+    .person-wrapper {
+      .text {
+        width: 300px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.38px;
+      }
+      .icon-title {
+        width: 295px;
+        .icon {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
+  .menu-mobile {
+    width: 375px;
+    padding: 0;
+    .title-wrapper-language {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 15px;
+      width: 375px;
+      height: 56px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: solid 1px #f3f3f3;
+      .title-language {
+        width: 187px;
+        height: 34px;
+        font-family: $Catamaran;
+        font-size: 21px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.53px;
+        color: $black;
+      }
+      .title-language-elem {
+        width: 56px;
+        height: 24px;
+        opacity: 0.25;
+        font-family: $OpenSans;
+        font-size: 17px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.13px;
+        text-align: center;
+        color: $black;
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+    .title-wrapper {
+      z-index: 2;
+      cursor: pointer;
+      padding-left: 15px;
+      width: 375px;
+      height: 56px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: solid 1px #f3f3f3;
+      .title {
+        width: 316px;
+        height: 34px;
+        font-family: $Catamaran;
+        font-size: 21px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.53px;
+        color: $black;
+      }
+    }
+  }
+
+  .burger-menu {
+    margin-top: -92px;
+  }
 }

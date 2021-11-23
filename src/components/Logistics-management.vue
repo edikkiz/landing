@@ -6,9 +6,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-1 scroll-for-more-info">Scroll for more information
-      <!-- <div class="scroll-for-more-info"></div> -->
-    </div>
+    <a @click="scrollMeTo()" class="col-1 scroll-for-more-info">
+      <div class="image">
+        <img src="../assets/img/scroll-down-arrow.png" />
+      </div>
+      <div class="text">Scroll for more information</div>
+    </a>
+    <div class="col-1"></div>
     <div class="col-7 LOGISTICS-MANAGEMENT-text">
       We solve transportation and stock management problems for Factories,
       Manufacturers, Carriers, Resellers, E-commerce and even more. Any issue
@@ -30,5 +34,13 @@
 <script>
 export default {
   name: "Logistics-management",
+  methods: {
+    scrollMeTo() {
+      window.scrollTo({
+        top: 30000,
+        behavior: "smooth",
+      });
+    },
+  },
 };
 </script>

@@ -4,9 +4,13 @@
     <div class="col-7 HOW-CAN-YOU-BENEFIT">
       HOW CAN YOU BENEFIT FROM <br />
       CUSTOM LOGISTICS SOFTWARE?
+      <div class="HOW-CAN-YOU-BENEFIT-mobile">
+      LOGISTICS MANAGEMENT 
+SOFTWARE DEVELOPMENT
+      </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row notation-row">
     <div class="col-6 notation-block">
       <div class="notation-wrapper">
         <div class="notation-icone">
@@ -36,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row notation-row">
     <div class="col-6 notation-block">
       <div class="notation-wrapper">
         <div class="notation-icone">
@@ -81,8 +85,8 @@ export default {
   name: "How-can-you-benefit",
   methods: {
     close() {
-      this.$emit("close");
+      this.$emit("close")
     },
   },
-};
+}
 </script>

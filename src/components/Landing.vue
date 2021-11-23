@@ -1,7 +1,22 @@
 <template>
-  <div v-bind:class="{ modalContainer: isModalVisible }" @click="isModalOpen()" class="container">
+  <div
+    v-bind:class="{ modalContainer: isModalVisible }"
+    @click="isModalOpen()"
+    class="container"
+  >
     <Header />
-    <logisticsManagement />
+    <div>"menuOpen"</div>
+    <div v-if="menuOpen" class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="button-desk-shadow">
+          <button class="button-desk">
+            <div class="button-desk-text">Request a free consultation</div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <logisticsManagement v-else />
     <HowYouExperienced />
     <div class="row">
       <div class="col-2"></div>
@@ -17,7 +32,13 @@
       <div class="col-4">
         <div class="button-desk-shadow">
           <button class="button-desk">
-            <div @click="openModal(); modalOpen()" class="button-desk-text">
+            <div
+              @click="
+                openModal();
+                modalOpen();
+              "
+              class="button-desk-text"
+            >
               Fill in the contact form
             </div>
           </button>
@@ -27,7 +48,7 @@
     <OurAdventages />
     <Footer />
   </div>
-  <Modal v-if="isModalVisible" @close="isModalVisible = false"  />
+  <Modal v-if="isModalVisible" @close="isModalVisible = false" />
 </template>
 
 <script>
@@ -38,6 +59,7 @@ import HowCanYouBenefit from "./How-can-you-benefit.vue";
 import OurAdventages from "./Our-adventages.vue";
 import Footer from "./Footer.vue";
 import Modal from "./Modal.vue";
+// import VueSlickCarousel from "./VueSlickCarousel.vue";
 
 export default {
   name: "Landing",
@@ -49,6 +71,7 @@ export default {
     OurAdventages,
     Footer,
     Modal,
+    // VueSlickCarousel,
   },
   data() {
     return {
@@ -56,26 +79,25 @@ export default {
     };
   },
   methods: {
-    modalOpen () {
-      document.body.classList.add('modal-open')
-      return
+    modalOpen() {
+      document.body.classList.add("modal-open");
+      return;
     },
-    isModalOpen () {
+    isModalOpen() {
       if (this.isModalVisible) {
-      document.body.classList.remove('modal-open')
-        this.isModalVisible = false
-        return
-      }
-      else {
-        return
+        document.body.classList.remove("modal-open");
+        this.isModalVisible = false;
+        return;
+      } else {
+        return;
       }
     },
-    openModal () {
+    openModal() {
       setTimeout(() => {
-        this.isModalVisible = true
-        }, 100)
-    }
-  }
+        this.isModalVisible = true;
+      }, 100);
+    },
+  },
 };
 </script>
 
