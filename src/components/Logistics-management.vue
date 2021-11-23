@@ -6,7 +6,9 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-1"></div>
+    <div class="col-1 scroll-for-more-info">Scroll for more information
+      <!-- <div class="scroll-for-more-info"></div> -->
+    </div>
     <div class="col-7 LOGISTICS-MANAGEMENT-text">
       We solve transportation and stock management problems for Factories,
       Manufacturers, Carriers, Resellers, E-commerce and even more. Any issue

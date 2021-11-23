@@ -118,7 +118,7 @@ header {
   }
   .button-desk:hover {
     cursor: pointer;
-    background-color: #07325f;
+    background-color: #022041;
     transition: 0.5s;
   }
   .button-desk-text {
@@ -145,9 +145,10 @@ header {
     box-shadow: 0 10px 30px 0 rgba(8, 61, 119, 0.25);
     background-color: $twilight-blue;
     .card-info-title {
+      padding-top: 67px;
       font-family: $OpenSans;
       height: 50px;
-      margin: 67px 0px 22px 0px;
+      margin: 0 0px 22px 0px;
       font-size: 21px;
       font-weight: bold;
       line-height: 25px;
@@ -155,6 +156,7 @@ header {
       color: $white;
     }
     .card-info-text {
+      padding-top: 67px;
       font-family: $OpenSans;
       font-size: 17px;
       font-weight: 400;
@@ -166,21 +168,17 @@ header {
       opacity: 0.8;
     }
   }
-  .last {
-    width: 318px;
-    margin-right: 0px;
-    overflow: hidden;
-    text-overflow: clip;
-    .card-info-text {
-      position: relative;
-      width: 345px;
-    }
-  }
 }
 
 .nav-buttons {
   display: flex;
   margin-bottom: 173px;
+  .prev-button,
+  .next-button {
+    padding: 0;
+    border: none;
+    background: none;
+  }
 }
 
 .selector-buttons {
@@ -189,6 +187,9 @@ header {
   align-items: center;
   justify-content: center;
   .selector-button {
+    padding: 0;
+    border: none;
+    background: none;
     margin-left: 16px;
   }
 }
@@ -427,6 +428,10 @@ footer {
   filter: blur(10px);
 }
 
+.modal-open {
+  overflow: hidden
+}
+
 .modal-wrapper {
   display: flex;
   align-items: center;
@@ -440,12 +445,13 @@ footer {
   background-color: white;
   display: flex;
   position: fixed;
-  top: 0px;
+  top: 34px;
   flex-direction: column;
   margin: auto;
   width: 633px;
   height: 753px;
   .modal-close {
+    cursor: pointer;
     display: flex;
     justify-content: end;
     margin-bottom: 8px;
@@ -493,10 +499,12 @@ footer {
         width: 240px;
         height: 44px;
         object-fit: contain;
-        opacity: 0.25;
         border-radius: 72px;
         border: solid 1px $black;
         padding: 10px 22px 10px 24px;
+      }
+      input::placeholder {
+        opacity: 0.25;
       }
     }
     .full-wrapper {
@@ -510,9 +518,11 @@ footer {
         height: 44px;
         padding: 10px 48.9px 10px 24px;
         object-fit: contain;
-        opacity: 0.25;
         border-radius: 72px;
         border: solid 1px $black;
+      }
+      .full::placeholder {
+        opacity: 0.25;
       }
       .text-box {
         font-family: $OpenSans;
@@ -557,6 +567,9 @@ footer {
     letter-spacing: -0.38px;
     color: $black;
     margin-bottom: 50px;
+    a {
+      color: $black;
+    }
   }
   .button-modal-wrapper {
     margin-left: 64px;
@@ -574,7 +587,7 @@ footer {
     }
     .button-modal:hover {
       cursor: pointer;
-      background-color: #07325f;
+      background-color: #022041;
       transition: 0.5s;
     }
     .button-modal-text {
@@ -589,4 +602,83 @@ footer {
       color: #fff;
     }
   }
+}
+
+.scroll-for-more-info {
+  width: 207px;
+  height: 36px;
+  transform: rotate(-90deg);
+  // margin: 0 67px 45px 120px;
+  margin-left: -120px;
+  opacity: 0.5;
+  font-family: $OpenSans;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: $charcoal;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-left: 66px;
+  }
+
+  header {
+    margin-right: 20px;
+    margin: 0 0 184px;
+    .navbar {
+      margin-left: -66px;
+      .navbar-elem {
+        width: 120px;
+      }
+      .last {
+        margin-left: 25px;
+      }
+    }
+  }
+
+  .container {
+    width: 768px;
+    padding: 0;
+    margin: 0;
+  }
+
+  footer {
+    width: 768px;
+  }
+
+  .row {
+    width: 768px;
+  }
+
+  .LOGISTICS-MANAGEMENT {
+    padding: 0;
+    font-size: 35px;
+    width: 452px;
+    height: 70px;
+    letter-spacing: -0.88px;
+  }
+
+  .LOGISTICS-MANAGEMENT-text {
+    width: 452px;
+    font-size: 17px;
+    letter-spacing: -0.43px;
+    margin: 0 0 87px 0;
+  }
+
+  .button-desk-shadow {
+    margin-left: -107px;
+
+    .button-desk-text {
+      font-weight: 900;
+    }
+  }
+
+  // .cards {
+  //   width: 768px;
+  // }
 }

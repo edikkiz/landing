@@ -44,7 +44,7 @@
       </div>
       <div class="privat-text">
         By pressing the “request a consultation” button you agree with
-        <u><b>data protection</b></u> policy
+        <a href="https://www.google.com/" target="_blank"><b>data protection</b></a> policy
       </div>
       <div class="button-modal-wrapper">
         <button @click="close" class="button-modal">
@@ -60,6 +60,7 @@ export default {
   name: "Modal",
   methods: {
     close() {
+      document.body.classList.remove('modal-open')
       this.$emit("close");
     },
   },

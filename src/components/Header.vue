@@ -6,7 +6,7 @@
       <div class="navbar col-6">
         <div class="navbar-elem">Benefits</div>
         <div class="navbar-elem">Advantages</div>
-        <div class="navbar-elem">Achievements</div>
+        <div class="navbar-elem last">Achievements</div>
       </div>
 
       <div class="col-1"></div>

@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:class="{ modalContainer: isModalVisible }" class="container">
+  <div v-bind:class="{ modalContainer: isModalVisible }" @click="isModalOpen()" class="container">
     <Header />
     <logisticsManagement />
     <HowYouExperienced />
@@ -17,7 +17,7 @@
       <div class="col-4">
         <div class="button-desk-shadow">
           <button class="button-desk">
-            <div @click="isModalVisible = true" class="button-desk-text">
+            <div @click="openModal(); modalOpen()" class="button-desk-text">
               Fill in the contact form
             </div>
           </button>
@@ -27,7 +27,7 @@
     <OurAdventages />
     <Footer />
   </div>
-  <Modal v-if="isModalVisible" @close="isModalVisible = false" />
+  <Modal v-if="isModalVisible" @close="isModalVisible = false"  />
 </template>
 
 <script>
@@ -55,6 +55,27 @@ export default {
       isModalVisible: false,
     };
   },
+  methods: {
+    modalOpen () {
+      document.body.classList.add('modal-open')
+      return
+    },
+    isModalOpen () {
+      if (this.isModalVisible) {
+      document.body.classList.remove('modal-open')
+        this.isModalVisible = false
+        return
+      }
+      else {
+        return
+      }
+    },
+    openModal () {
+      setTimeout(() => {
+        this.isModalVisible = true
+        }, 100)
+    }
+  }
 };
 </script>
 
