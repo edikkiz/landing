@@ -8,10 +8,13 @@
         LET’S DISCUSS <br />
         YOUR BUSINESS CASE!
       </div>
-      <div class="text">
+      <div v-if="width > 425" class="text">
         Everything is possible! We will analyze your existing situation,
         discover the bottlenecks and offer a solution that exactly matches your
         business case!
+      </div>
+      <div v-else class="text">
+        Everything is possible!
       </div>
       <div class="inputs">
         <div class="input-name">
@@ -64,5 +67,10 @@ export default {
       this.$emit("close");
     },
   },
+  data () {
+    return {
+      widht: window.outerWidth
+    }
+  }
 };
 </script>

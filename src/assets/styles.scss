@@ -138,8 +138,58 @@ header {
   }
 }
 
-.cards {
+.carousel {
   width: 1188px;
+  margin-left: 95px;
+  margin-bottom: 178px;
+}
+
+.carousel__prev {
+  width: 70px;
+  height: 70px;
+  border-radius: 0;
+  font-size: 0;
+  content: none;
+  background: url("./img/prev-button.png");
+  margin: 403px 0 0 35px;
+  top: 0;
+  left: 0;
+}
+
+.carousel__next {
+  margin: 403px 0 0 35px;
+  border-radius: 0;
+  width: 70px;
+  height: 70px;
+  font-size: 0;
+  content: none;
+  background: url("./img/next-button.png");
+  top: 0;
+  left: 0;
+}
+
+.carousel__pagination-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.25;
+}
+
+.carousel__pagination-button--active {
+  opacity: 1;
+}
+
+.disable {
+  opacity: 0.25;
+}
+
+.carousel__pagination {
+  margin-left: -340px;
+}
+
+.cards {
+  width: 435px;
   display: flex;
   .card-info {
     width: 420px;
@@ -150,6 +200,7 @@ header {
     box-shadow: 0 10px 30px 0 rgba(8, 61, 119, 0.25);
     background-color: $twilight-blue;
     .card-info-title {
+      text-align: start;
       padding-top: 67px;
       font-family: $OpenSans;
       height: 50px;
@@ -161,6 +212,7 @@ header {
       color: $white;
     }
     .card-info-text {
+      text-align: start;
       padding-top: 67px;
       font-family: $OpenSans;
       font-size: 17px;
@@ -172,30 +224,6 @@ header {
       color: $white;
       opacity: 0.8;
     }
-  }
-}
-
-.nav-buttons {
-  display: flex;
-  margin-bottom: 173px;
-  .prev-button,
-  .next-button {
-    padding: 0;
-    border: none;
-    background: none;
-  }
-}
-
-.selector-buttons {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .selector-button {
-    padding: 0;
-    border: none;
-    background: none;
-    margin-left: 16px;
   }
 }
 
@@ -451,7 +479,13 @@ footer {
 }
 
 .modal-open {
+  position: relative;
+  height: 653px;
   overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .modal-wrapper {
@@ -721,22 +755,26 @@ footer {
     font-size: 25px;
   }
 
-  .cards-wrapper {
-    margin-right: 65px;
+  .carousel {
+    width: 768px;
+    margin-left: 0px;
   }
 
   .cards {
-    width: 768px;
-    //   .card-info {
-    //     overflow: hidden;
-    //     width: 375px;
-    //     .card-info-text {
-    //       font-size: 15px;
-    //     }
-    //   }
-    //   .last {
-    //     overflow: hidden;
-    //   }
+    width: 375px;
+    margin-left: -25px;
+    .card-info {
+      margin-right: 0;
+      padding: 87px 15px;
+      width: 375px;
+      .card-info-title {
+        padding-top: 0;
+      }
+      .card-info-text {
+        padding-top: 0;
+        font-size: 15px;
+      }
+    }
   }
 
   .text-with-procents {
@@ -801,12 +839,17 @@ footer {
     padding: 90px 110px 90px 108px;
     margin-left: -11px;
   }
-  .modal .inputs {
-    .input-name input {
-      font-size: 17px;
-    }
-    .full-wrapper .full {
-      font-size: 17px;
+
+  .modal {
+    top: 34;
+    left: 68px;
+    .inputs {
+      .input-name input {
+        font-size: 17px;
+      }
+      .full-wrapper .full {
+        font-size: 17px;
+      }
     }
   }
 }
@@ -815,6 +858,49 @@ footer {
   body {
     margin-left: 0;
     padding-left: 35px;
+  }
+
+  .modal {
+    width: 345px;
+    height: 753px;
+    top: 30px;
+    left: 15px;
+    .title {
+      margin-left: 25px;
+    }
+    .text {
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+    .privat-text {
+      width: 295px;
+      margin-left: 25px;
+      margin-bottom: 25px;
+    }
+
+    .button-modal-wrapper {
+      margin-left: 80px;
+      width: 240px;
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      .input-name {
+        margin-left: 25px;
+        input {
+          width: 295px;
+          font-size: 17px;
+        }
+      }
+      .full-wrapper {
+        margin-left: 25px;
+        .full {
+          width: 295px;
+          font-size: 17px;
+          padding: 13px 24px;
+        }
+      }
+    }
   }
 
   .container {
@@ -830,6 +916,44 @@ footer {
         width: 24px;
       }
     }
+  }
+
+  .carousel {
+    width: 375px;
+    margin-left: -20px;
+  }
+
+  .cards {
+    width: 375px;
+    margin-left: 0px;
+    .card-info {
+      margin-right: 0;
+      padding: 91px 30px;
+      width: 375px;
+      .card-info-title {
+        padding-top: 0;
+      }
+      .card-info-text {
+        padding-top: 0;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .carousel__pagination {
+    margin-left: -210px;
+  }
+
+  .carousel__pagination-item {
+    margin-left: 5px;
+  }
+
+  .carousel__next {
+    margin: 403px 0 0 270px;
+  }
+
+  .carousel__prev {
+    margin: 403px 0 0 270px;
   }
 
   footer {
@@ -928,6 +1052,7 @@ footer {
     letter-spacing: -0.63px;
     margin-left: 20px;
     padding: 0;
+    margin-bottom: 50px;
   }
   .text-with-procents {
     margin-left: 0;
@@ -1135,6 +1260,14 @@ footer {
   }
 
   .burger-menu {
+    .button-desk-shadow {
+      margin-bottom: 300px;
+      box-shadow: 0px 5px 10px 0px rgba(8, 61, 119, 0.5);
+      height: 44px;
+      .button-desk {
+        height: 44px;
+      }
+    }
     margin-top: -92px;
   }
 }

@@ -1,22 +1,11 @@
 <template>
-  <div
+<div
     v-bind:class="{ modalContainer: isModalVisible }"
     @click="isModalOpen()"
     class="container"
   >
     <Header />
-    <div>"menuOpen"</div>
-    <div v-if="menuOpen" class="row">
-      <div class="col-4"></div>
-      <div class="col-4">
-        <div class="button-desk-shadow">
-          <button class="button-desk">
-            <div class="button-desk-text">Request a free consultation</div>
-          </button>
-        </div>
-      </div>
-    </div>
-    <logisticsManagement v-else />
+    <logisticsManagement />
     <HowYouExperienced />
     <div class="row">
       <div class="col-2"></div>
@@ -59,7 +48,7 @@ import HowCanYouBenefit from "./How-can-you-benefit.vue";
 import OurAdventages from "./Our-adventages.vue";
 import Footer from "./Footer.vue";
 import Modal from "./Modal.vue";
-// import VueSlickCarousel from "./VueSlickCarousel.vue";
+
 
 export default {
   name: "Landing",
@@ -71,7 +60,6 @@ export default {
     OurAdventages,
     Footer,
     Modal,
-    // VueSlickCarousel,
   },
   data() {
     return {
@@ -101,5 +89,4 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss"></style>

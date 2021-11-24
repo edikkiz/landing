@@ -14,7 +14,8 @@
         <div class="language-elem">DE</div>
         <div class="language-elem active">EN</div>
         <div @click="isOpen()" class="burger-menu-icon">
-          <img src="../assets/menu.png" />
+          <img v-if="menuOpen" src="../assets/menu-close.png" />
+          <img v-else src="../assets/menu.png" />
         </div>
       </div>
     </header>
@@ -47,6 +48,16 @@
         <div class="title-language-elem active">EN</div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <div class="button-desk-shadow">
+          <button class="button-desk">
+            <div class="button-desk-text">Request a free consultation</div>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -62,10 +73,10 @@ export default {
     isOpen() {
       if (this.menuOpen) {
         this.menuOpen = false;
-        this.$emit("menuOpen", this.menuOpen);
+      document.body.classList.remove("modal-open");
       } else {
         this.menuOpen = true;
-        this.$emit("menuOpen", this.menuOpen);
+      document.body.classList.add("modal-open");
       }
     },
   },
