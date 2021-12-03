@@ -20,8 +20,8 @@
         <div class="notation-mobile">
           <div @click="showText(1)" class="title-wrapper">
             <div class="title">System Integration</div>
-            <img v-if="notationText1" src="../assets/pin-down.png" />
-            <img v-else src="../assets/pin-up.png" />
+            <img v-if="notationText1" src="../assets/pin-up.png" />
+            <img v-else src="../assets/pin-down.png" />
           </div>
           <div v-if="notationText1" class="text">
             We help you with educating employees and integrating software in
@@ -46,8 +46,8 @@
         <div class="notation-mobile">
           <div @click="showText(2)" class="title-wrapper">
             <div class="title">Technical support</div>
-            <img v-if="notationText2" src="../assets/pin-down.png" />
-            <img v-else src="../assets/pin-up.png" />
+            <img v-if="notationText2" src="../assets/pin-up.png" />
+            <img v-else src="../assets/pin-down.png" />
           </div>
           <div v-if="notationText2" class="text">
             We guarantee support and product maintenance after release and keep
@@ -72,8 +72,8 @@
         <div class="notation-mobile">
           <div @click="showText(3)" class="title-wrapper">
             <div class="title">Data security</div>
-            <img v-if="notationText3" src="../assets/pin-down.png" />
-            <img v-else src="../assets/pin-up.png" />
+            <img v-if="notationText3" src="../assets/pin-up.png" />
+            <img v-else src="../assets/pin-down.png" />
           </div>
           <div v-if="notationText3" class="text">
             Your data is stored on secure servers based in Germany (or any other
@@ -98,8 +98,8 @@
         <div class="notation-mobile">
           <div @click="showText(4)" class="title-wrapper">
             <div class="title">We speak your language</div>
-            <img v-if="notationText4" src="../assets/pin-down.png" />
-            <img v-else src="../assets/pin-up.png" />
+            <img v-if="notationText4" src="../assets/pin-up.png" />
+            <img v-else src="../assets/pin-down.png" />
           </div>
           <div v-if="notationText4" class="text">
             Our managers are German- and English-speaking, so the business
@@ -124,8 +124,8 @@
         <div class="notation-mobile">
           <div @click="showText(5)" class="title-wrapper">
             <div class="title">Representative in Germany</div>
-            <img v-if="notationText5" src="../assets/pin-down.png" />
-            <img v-else src="../assets/pin-up.png" />
+            <img v-if="notationText5" src="../assets/pin-up.png" />
+            <img v-else src="../assets/pin-down.png" />
           </div>
           <div v-if="notationText5" class="text">
             Our business analyst is based in Frankfurt am Main. Discussing all
@@ -150,8 +150,8 @@
         <div class="notation-mobile">
           <div @click="showText(6)" class="title-wrapper">
             <div class="title">5 years experience in logistics</div>
-            <img v-if="notationText6" src="../assets/pin-down.png" />
-            <img v-else src="../assets/pin-up.png" />
+            <img v-if="notationText6" src="../assets/pin-up.png" />
+            <img v-else src="../assets/pin-down.png" />
           </div>
           <div v-if="notationText6" class="text">
             We’ve successfully implemented custom logistics/ <br />

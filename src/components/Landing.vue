@@ -1,5 +1,5 @@
 <template>
-<div
+  <div
     v-bind:class="{ modalContainer: isModalVisible }"
     @click="isModalOpen()"
     class="container"
@@ -35,8 +35,8 @@
       </div>
     </div>
     <OurAdventages />
-    <Footer />
   </div>
+  <Footer />
   <Modal v-if="isModalVisible" @close="isModalVisible = false" />
 </template>
 
@@ -48,7 +48,6 @@ import HowCanYouBenefit from "./How-can-you-benefit.vue";
 import OurAdventages from "./Our-adventages.vue";
 import Footer from "./Footer.vue";
 import Modal from "./Modal.vue";
-
 
 export default {
   name: "Landing",

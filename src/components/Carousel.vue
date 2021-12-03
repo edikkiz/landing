@@ -1,5 +1,10 @@
 <template>
-  <carousel v-if="width > 768" :items-to-show="2.75">
+  <carousel
+    v-if="width > 768"
+    :snapAlign="start"
+    :itemsToScroll="1"
+    :items-to-show="2.75"
+  >
     <slide :key="slide">
       <div class="cards">
         <div class="card-info">
@@ -75,7 +80,11 @@
     </template>
   </carousel>
 
-  <carousel v-if="width <= 768 && width > 425" :items-to-show="1.95">
+  <carousel
+    v-if="width <= 768 && width > 425"
+    :snapAlign="start"
+    :items-to-show="1.95"
+  >
     <slide :key="slide">
       <div class="cards">
         <div class="card-info">
@@ -151,7 +160,7 @@
     </template>
   </carousel>
 
-  <carousel v-if="width < 425" :items-to-show="1">
+  <carousel v-if="width <= 425" :snapAlign="start" :items-to-show="1">
     <slide :key="slide">
       <div class="cards">
         <div class="card-info">
@@ -242,6 +251,7 @@ export default {
   },
   data() {
     return {
+      start: "start",
       width: window.outerWidth,
     };
   },

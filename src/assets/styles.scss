@@ -21,6 +21,12 @@ body {
 }
 
 header {
+  .logo {
+    margin-left: -95px;
+    img {
+      cursor: pointer;
+    }
+  }
   .burger-menu-icon {
     img {
       width: 0;
@@ -40,6 +46,7 @@ header {
     color: $black;
     text-align: center;
     .navbar-elem {
+      cursor: pointer;
       width: 144px;
       height: 23px;
     }
@@ -48,6 +55,7 @@ header {
     display: flex;
     justify-content: start;
     .language-elem {
+      cursor: pointer;
       width: 56px;
       height: 24px;
       opacity: 0.25;
@@ -269,6 +277,7 @@ header {
   letter-spacing: -0.88px;
   color: $black;
   .HOW-CAN-YOU-BENEFIT-mobile {
+    margin-left: 15px;
     font-size: 0;
   }
 }
@@ -436,13 +445,15 @@ header {
 }
 
 footer {
+  img {
+    cursor: pointer;
+  }
   .nav-wrapper-modile {
     .data-protection-mobile {
       font-size: 0;
     }
   }
-  margin-left: -150px;
-  width: 1440px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -451,6 +462,7 @@ footer {
   .nav-wrapper {
     display: flex;
     .nav {
+      cursor: pointer;
       font-family: $OpenSans;
       font-size: 15px;
       font-weight: 600;
@@ -495,6 +507,7 @@ footer {
 }
 
 .modal {
+  box-shadow: 0 10px 30px 0 rgba(30, 30, 30, 0.25);
   -webkit-filter: none;
   filter: none;
   filter: none;
@@ -556,7 +569,7 @@ footer {
         height: 44px;
         object-fit: contain;
         border-radius: 72px;
-        border: solid 1px $black;
+        border: solid 1px rgba(30, 30, 30, 0.25);
         padding: 10px 22px 10px 24px;
       }
       input::placeholder {
@@ -575,7 +588,7 @@ footer {
         padding: 10px 48.9px 10px 24px;
         object-fit: contain;
         border-radius: 72px;
-        border: solid 1px $black;
+        border: solid 1px rgba(30, 30, 30, 0.25);
       }
       .full::placeholder {
         opacity: 0.25;
@@ -686,15 +699,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-  body {
-    margin-left: 66px;
-  }
-
   header {
-    margin-right: 20px;
-    margin: 0 0 184px;
+    margin: 0 0 184px 0;
+    .logo-tablet {
+      margin-left: 66px;
+      img {
+        cursor: pointer;
+      }
+    }
     .navbar {
-      margin-left: -66px;
       .navbar-elem {
         width: 120px;
       }
@@ -711,8 +724,32 @@ footer {
   }
 
   footer {
-    margin-left: -66px;
-    width: 768px;
+    img {
+      cursor: pointer;
+    }
+    width: 100%;
+    .nav-wrapper-modile {
+      .data-protection-mobile {
+        cursor: pointer;
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        text-align: center;
+        color: #fff;
+        height: 20px;
+        margin-left: -500px;
+      }
+    }
+    .nav-wrapper {
+      .data-protection,
+      .imprint {
+        font-size: 0;
+      }
+    }
   }
 
   .row {
@@ -725,6 +762,7 @@ footer {
     width: 452px;
     height: 70px;
     letter-spacing: -0.88px;
+    margin-left: 80px;
   }
 
   .LOGISTICS-MANAGEMENT-text {
@@ -736,11 +774,11 @@ footer {
 
   .scroll-for-more-info {
     margin-top: 20px;
-    margin-left: -120px;
+    margin-left: -45px;
   }
 
   .button-desk-shadow {
-    margin-left: -107px;
+    margin-left: -40px;
     margin-bottom: 144px;
 
     .button-desk-text {
@@ -750,14 +788,14 @@ footer {
 
   .Have-you-experienced {
     height: 25px;
-    margin-left: -35px;
+    margin-left: 35px;
     width: 585px;
     font-size: 25px;
   }
 
   .carousel {
     width: 768px;
-    margin-left: 0px;
+    margin-left: 66px;
   }
 
   .cards {
@@ -781,7 +819,7 @@ footer {
     width: 258.6px;
     height: 75.2px;
     font-size: 18.8px;
-    margin-left: -115px;
+    margin-left: -35px;
     margin-bottom: 165px;
   }
   .procents {
@@ -795,8 +833,8 @@ footer {
   }
 
   .HOW-CAN-YOU-BENEFIT {
-    margin-left: -40px;
     padding: 0;
+    padding-left: 48px;
     font-size: 25px;
     margin-bottom: 121px;
   }
@@ -807,7 +845,7 @@ footer {
 
   .notation-block {
     padding-left: 0;
-    margin-left: -30px;
+    margin-left: 58px;
     .notation-wrapper {
       .notation-text {
         font-weight: normal;
@@ -821,14 +859,13 @@ footer {
 
   .YOUR-BUSINESS-CASE {
     margin-top: 157px;
-    margin-left: -115px;
+    margin-left: -45px;
   }
 
   .our-advantages-block {
     display: flex;
     flex-direction: column;
     margin-top: 29px;
-    margin-left: -20px;
     .our-advantages {
       font-size: 25px;
     }
@@ -857,9 +894,11 @@ footer {
 @media (max-width: 426px) {
   body {
     margin-left: 0;
-    padding-left: 35px;
   }
 
+  .row {
+    margin: 0;
+  }
   .modal {
     width: 345px;
     height: 753px;
@@ -907,24 +946,27 @@ footer {
   .container {
     width: 375px;
     padding: 0;
-    margin-left: -15px;
   }
 
   header {
     .burger-menu-icon {
       img {
-        margin-left: 40px;
+        margin-left: 50px;
         width: 24px;
       }
+    }
+    .logo {
+      margin-left: 37px;
     }
   }
 
   .carousel {
     width: 375px;
+    margin-left: 0px;
   }
 
   .cards {
-    width: 375px;
+    width: 100%;
     margin-left: 0px;
     .card-info {
       margin-right: 0;
@@ -959,6 +1001,7 @@ footer {
   footer {
     img {
       margin-left: -100px;
+      cursor: pointer;
     }
     .nav-wrapper {
       .data-protection {
@@ -970,6 +1013,9 @@ footer {
     }
     .nav-wrapper-modile {
       .data-protection-mobile {
+        text {
+          cursor: pointer;
+        }
         width: 200px;
         height: 20px;
         margin: -20px 0 36px;
@@ -989,7 +1035,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     margin-left: 0;
-    width: 375px;
+    width: 100%;
     height: 208px;
   }
 
@@ -1026,9 +1072,11 @@ footer {
     height: 120px;
     letter-spacing: -0.75px;
     margin-bottom: 50px;
+    margin-left: 5px;
   }
 
   .LOGISTICS-MANAGEMENT-text {
+    margin-left: 35px;
     margin-bottom: 50px;
     width: 325px;
     height: 138px;
@@ -1041,6 +1089,7 @@ footer {
   .button-desk-shadow {
     box-shadow: 0px 5px 10px 0px rgba(8, 61, 119, 0.5);
     height: 57px;
+    margin-left: -95px;
     .button-desk {
       height: 57px;
     }
@@ -1069,8 +1118,9 @@ footer {
 
   .HOW-CAN-YOU-BENEFIT {
     font-size: 0;
+    margin-left: 15px;
     .HOW-CAN-YOU-BENEFIT-mobile {
-      margin-left: 15px;
+      margin-left: -35px;
       width: 345px;
       height: 50px;
       font-family: $Catamaran;
@@ -1112,6 +1162,10 @@ footer {
     .notation .icon img {
       width: 0;
     }
+
+    .title-wrapper {
+      margin-left: 20px;
+    }
     .notation .title-text {
       .title {
         font-size: 0;
@@ -1121,22 +1175,27 @@ footer {
         margin-bottom: 0;
       }
     }
+    .notation {
+      height: 0;
+    }
 
     .notation-mobile {
-      width: 375px;
+      width: 425px;
       padding: 0;
+      margin-left: -15px;
+      border: solid 1px #f3f3f3;
       .title-wrapper {
         z-index: 2;
         cursor: pointer;
-        padding-left: 15px;
-        width: 375px;
+        padding-left: 25px;
+        width: 100%;
         height: 56px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        border: solid 1px #f3f3f3;
+        margin-left: 0;
         .title {
-          width: 316px;
+          width: 306px;
           height: 34px;
           font-family: $Catamaran;
           font-size: 21px;
@@ -1153,6 +1212,7 @@ footer {
         }
       }
       .text {
+        margin-left: 22px;
         padding-left: 15px;
         width: 345px;
         opacity: 0.75;
@@ -1170,12 +1230,13 @@ footer {
 
   .our-advantages {
     width: 345px;
+    margin-left: 35px;
   }
 
   .our-advantages-person-wrapper {
     padding: 25px;
     margin-top: 98px;
-    margin-left: 15px;
+    margin-left: 5px;
     width: 345px;
     height: 625px;
     .person-wrapper {
@@ -1198,6 +1259,7 @@ footer {
   .menu-mobile {
     width: 375px;
     padding: 0;
+    border: solid 1px #f3f3f3;
     .title-wrapper-language {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -1247,7 +1309,7 @@ footer {
       display: flex;
       flex-direction: row;
       align-items: center;
-      border: solid 1px #f3f3f3;
+      margin-left: 15px;
       .title {
         width: 316px;
         height: 34px;
@@ -1273,5 +1335,12 @@ footer {
       }
     }
     margin-top: -92px;
+  }
+
+  .notation-row {
+    margin-left: 15px;
+  }
+  .YOUR-BUSINESS-CASE {
+    margin-left: 25px;
   }
 }

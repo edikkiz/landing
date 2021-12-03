@@ -6,7 +6,11 @@
     </div>
   </div>
   <div class="row">
-    <a @click="scrollMeTo()" class="col-1 scroll-for-more-info">
+    <a
+      v-if="width > 425"
+      @click="scrollMeTo()"
+      class="col-1 scroll-for-more-info"
+    >
       <div class="image">
         <img src="../assets/img/scroll-down-arrow.png" />
       </div>
@@ -41,6 +45,11 @@ export default {
         behavior: "smooth",
       });
     },
+  },
+  data() {
+    return {
+      width: window.outerWidth,
+    };
   },
 };
 </script>

@@ -1,7 +1,14 @@
 <template>
   <div class="row">
     <header>
-      <div class="col-3"></div>
+      <div class="col-3">
+        <div v-if="width > 768 || width <= 425" class="logo">
+          <img src="../assets/group-2.png" alt="" />
+        </div>
+        <div v-if="width <= 768 && width > 425" class="logo-tablet">
+          <img src="../assets/group-tablet2.png" alt="" />
+        </div>
+      </div>
 
       <div class="navbar col-6">
         <div class="navbar-elem">Benefits</div>
@@ -67,16 +74,17 @@ export default {
   data() {
     return {
       menuOpen: false,
+      width: window.outerWidth,
     };
   },
   methods: {
     isOpen() {
       if (this.menuOpen) {
         this.menuOpen = false;
-      document.body.classList.remove("modal-open");
+        document.body.classList.remove("modal-open");
       } else {
         this.menuOpen = true;
-      document.body.classList.add("modal-open");
+        document.body.classList.add("modal-open");
       }
     },
   },
