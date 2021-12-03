@@ -275,3 +275,224 @@ export default {
   name: "Our-adventages",
 };
 </script>
+
+<style lang="scss" scoped>
+.our-advantages {
+  font-family: $Catamaran;
+  font-size: 35px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.88px;
+  color: $black;
+  margin-bottom: 52px;
+  height: 44px;
+  width: 505px;
+}
+
+.our-advantages-person-wrapper {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  width: 633px;
+  height: 757px;
+  padding: 96px 158px 133px 40px;
+  margin: 0 0 229px -20px;
+}
+
+.our-advantages-block {
+  margin-left: 10px;
+}
+
+.our-advantages-notations-wrapper {
+  margin-right: -20px;
+  .notation-mobile {
+    font-size: 0;
+    img {
+      width: 0;
+    }
+  }
+  .notation {
+    display: flex;
+    .icon {
+      margin-right: 43px;
+    }
+    .title-text {
+      .title {
+        font-family: $Catamaran;
+        font-size: 21px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.53px;
+        color: $black;
+      }
+      .text {
+        width: $textWidth;
+        opacity: 0.75;
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.38px;
+        color: $black;
+        margin-bottom: 26px;
+      }
+    }
+  }
+  .person-wrapper {
+    .text {
+      width: 435px;
+      font-family: $OpenSans;
+      font-size: 17px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.43px;
+      color: $black;
+      margin-bottom: 15px;
+    }
+    .icon-title {
+      width: 435px;
+      display: flex;
+      flex-direction: row-reverse;
+      .title {
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.43px;
+        text-align: right;
+        color: $black;
+      }
+      .icon {
+        margin: 0 0 71px 15px;
+        filter: grayscale(100%);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .our-advantages-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    .our-advantages {
+      font-size: 25px;
+    }
+  }
+  .our-advantages-person-wrapper {
+    width: 633px;
+    height: 708px;
+    padding: 90px 110px 90px 108px;
+    margin-left: -11px;
+  }
+}
+@media (max-width: 426px) {
+  .our-advantages-notations-wrapper {
+    .notation .icon img {
+      width: 0;
+    }
+
+    .title-wrapper {
+      margin-left: 20px;
+    }
+    .notation .title-text {
+      .title {
+        font-size: 0;
+      }
+      .text {
+        font-size: 0;
+        margin-bottom: 0;
+      }
+    }
+    .notation {
+      height: 0;
+    }
+
+    .notation-mobile {
+      width: 430px;
+      padding: 0;
+      margin-left: -25px;
+      padding-left: 10px;
+      border: solid 1px #f3f3f3;
+      .title-wrapper {
+        z-index: 2;
+        cursor: pointer;
+        padding-left: 25px;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0;
+        .title {
+          width: 306px;
+          height: 34px;
+          font-family: $Catamaran;
+          font-size: 21px;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: -0.53px;
+          color: $black;
+        }
+        img {
+          width: 18px;
+          height: 10px;
+        }
+      }
+      .text {
+        margin-left: 22px;
+        padding-left: 15px;
+        width: 345px;
+        opacity: 0.75;
+        font-family: $OpenSans;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.38px;
+        color: $black;
+      }
+    }
+  }
+
+  .our-advantages {
+    width: 345px;
+    margin-left: 35px;
+  }
+
+  .our-advantages-person-wrapper {
+    padding: 25px;
+    margin-top: 98px;
+    margin-left: 5px;
+    width: 345px;
+    height: 625px;
+    .person-wrapper {
+      .text {
+        width: 300px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.38px;
+      }
+      .icon-title {
+        width: 295px;
+        .icon {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+</style>

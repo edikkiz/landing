@@ -257,3 +257,97 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.carousel {
+  width: 1188px;
+  margin-left: 95px;
+  margin-bottom: 178px;
+}
+
+.cards {
+  width: 435px;
+  display: flex;
+  .card-info {
+    width: 420px;
+    height: 368px;
+    margin-right: 15px;
+    padding: 0 37px 0 38px;
+    object-fit: contain;
+    box-shadow: 0 10px 30px 0 rgba(8, 61, 119, 0.25);
+    background-color: $twilight-blue;
+    .card-info-title {
+      text-align: start;
+      padding-top: 67px;
+      font-family: $OpenSans;
+      height: 50px;
+      margin: 0 0px 22px 0px;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 25px;
+      letter-spacing: -0.53px;
+      color: $white;
+    }
+    .card-info-text {
+      text-align: start;
+      padding-top: 67px;
+      font-family: $OpenSans;
+      font-size: 17px;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.43px;
+      color: $white;
+      opacity: 0.8;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    width: 768px;
+    margin-left: 66px;
+  }
+
+  .cards {
+    width: 375px;
+    margin-left: -25px;
+    .card-info {
+      margin-right: 0;
+      padding: 87px 15px;
+      width: 375px;
+      .card-info-title {
+        padding-top: 0;
+      }
+      .card-info-text {
+        padding-top: 0;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 426px) {
+  .carousel {
+    width: 375px;
+    margin-left: 0px;
+  }
+
+  .cards {
+    width: 100%;
+    margin-left: 0px;
+    .card-info {
+      margin-right: 0;
+      padding: 91px 30px;
+      width: 375px;
+      .card-info-title {
+        padding-top: 0;
+      }
+      .card-info-text {
+        padding-top: 0;
+        font-size: 15px;
+      }
+    }
+  }
+
+}
+</style>
